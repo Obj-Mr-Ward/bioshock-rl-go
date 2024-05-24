@@ -1,0 +1,33 @@
+Project setup
+
+1. create a new directory mkdir example-go
+
+2. initialize a mod file with go mod init example-go
+
+3. download termbox with go get -u github.com/nsf/termbox-go
+
+
+Project Milestones
+
+1.Setup basic drawing/screen output and keyboard inputs.
+    1.1 Create a basic "@" that can walk around the screen.
+    1.2 Add message handeling for debuging and output.
+
+2.Create a basic screen layout and game map.
+    2.2 Hardcode a simple map for the player to move around in. Including collisions for walls and maybe doors with open/close commands.
+    2.3 Optionally you can make the map scrolling if you want maps that are to large to display in the active game window. 
+    2.4 Create the layout for the main game screen and hud for displaying an event log, messages, player stats, and menu options, mini map, etc.
+
+3.Add saving and loading (optional) can be added later.
+    3.1 Add a way to save the current map as well as any other important information like the players current stats and inventory.
+    3.2 Add inputs/options for the player to save and load there game.
+
+4.Add Other creatures/enemies 
+    4.1 Create a turn system
+    4.2 Add an enemy that moves after the players turn with basic logic for chasing the player.
+    4.3 Add collisions so the player and ai don't overlap with eachother or other entities.
+    4.4 Add logic for the enemy to attack the player. that calls a place holder attack function when in range of the player.
+
+5.Add stats to the player and creatures.
+    5.1 Add a basic list of stats to the player and creatures so that you can create logic for them to interact with each other.
+
